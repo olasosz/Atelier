@@ -2,6 +2,8 @@ var mouseClicks = [];
 
 function setup(){
 	createCanvas(720,480);
+	var button = createButton('add particle');
+	button.mousePressed(addParticle);
 }
 
 function draw() {
@@ -15,10 +17,10 @@ function draw() {
 	}
 }
 
-function mouseClicked() {
+function addParticle() {
 	var clickposition ={
-		x:mouseX,
-		y:mouseY,
+		x:random(width),
+		y:random(height),
 		xspeed:random(-5,5),
 		yspeed:random(-5,5)
 	}
