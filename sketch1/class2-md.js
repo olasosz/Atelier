@@ -8,7 +8,7 @@ function setup(){
 }
 
 function draw() {
-	 background(60,100,245,15);
+	 background(40);
 
 	for (var i = 0; i < mouseClicks.length; i++) {
 		fill(mouseClicks[i].color);
@@ -24,7 +24,7 @@ function addParticle() {
 		y:random(height),
 		xspeed:random(-5,5),
 		yspeed:random(-5,5),
-		color: color(random(100,150), random(255),random(255))
+		color: color(random(100,200), random(100,255),random(100,255))
 	}
 	mouseClicks.push(clickposition);
 }
