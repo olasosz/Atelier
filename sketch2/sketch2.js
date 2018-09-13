@@ -1,6 +1,9 @@
+var sound;
+
 function setup(){
 	createCanvas(720,480);
 	//noStroke()
+	sound = createAudio('artisdead.mp3');
 }
 
 function draw(){
@@ -11,6 +14,7 @@ function mouseClicked() {
 	var click = dist(width/2,height/2,mouseX,mouseY);
 		if (click < 15) {
 		fill(100);
+		sound.play;
 	}
 }
 
