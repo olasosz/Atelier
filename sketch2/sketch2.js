@@ -8,9 +8,10 @@ function draw(){
 }
 
 function mouseClicked() {
-	if(mouseX > width/2-15 && mouseX < width/2+15){
-		if (mouseY > height/2-15 && mouseY < height/2+15) {
+	var click = dist(width/2,height/2,mouseX,mouseY);
+		if (click < 15) {
 		fill(100);
 	}
-	}
 }
+
+//this could be a pulse/ripple to try out
