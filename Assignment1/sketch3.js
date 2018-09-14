@@ -4,7 +4,7 @@ var bubble;
 function setup(){
 	createCanvas(720,480);
 	//noStroke()
-	sound = createAudio('artisdead.mp3');
+	sound = createAudio('ow.mp3');
 	bubble = {
 		x : width/2,
 		y : height/2,
