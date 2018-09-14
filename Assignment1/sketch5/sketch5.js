@@ -20,7 +20,7 @@ function draw() {
 function mouseClicked() {
 
 var click = dist(img.x,img.y,mouseX,mouseY);
-		if (click < bubble.r) {
+		if (click < img.r) {
 			image(img,random(width),random(height));
 		}
 	}
