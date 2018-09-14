@@ -21,10 +21,10 @@ function draw(){
 
 function mouseClicked() {
 	var click = dist(bubble.x,bubble.y,mouseX,mouseY);
-	for (var i = 0; i < 10; i++) {
+	for (var i = 0; i < dot.length; i++) {
 		if (click < bubble.r) {
-		fill(mouseClicks[i].color);
-		ellipse(mouseClicks[i].x,mouseClicks[i].y,10);
+			fill(mouseClicks[i].color);
+			ellipse(mouseClicks[i].x,mouseClicks[i].y,10);
 
 		}
 	}
