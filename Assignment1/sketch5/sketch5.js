@@ -24,4 +24,3 @@ var click = dist(img.x,img.y,mouseX,mouseY);
 			image(img,random(width),random(height));
 		}
 	}
-}
